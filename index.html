@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-calculator">
+            <h1 class="heading">Javascript Calculator</h1>
+            <div class="calculator">
+                <input type="text" class="calculator-display" id="input" value="0" disabled />
+                <div class="calculator_keys">
+                    <button class="operator keys">+</button>
+                    <button class="operator keys">-</button>
+                    <button class="operator keys">*</button>
+                    <button class="operator keys">/</button>
+
+                    <button class="keys">7</button>
+                    <button class="keys">8</button>
+                    <button class="keys">9</button>
+
+
+                    <button class="keys">4</button>
+                    <button class="keys">5</button>
+                    <button class="keys">6</button>
+
+
+                    <button class="keys">1</button>
+                    <button class="keys">2</button>
+                    <button class="keys">3</button>
+
+
+                    <button class="keys">0</button>
+                    <button class="keys">.</button>
+                    <button class="all-clear" onclick="clearall()">C</button>
+
+                    <button class="equal-sign" onclick="findresult()">=</button>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="calculator-history">
+            <h1 class="heading">History</h1>
+            <ol id="history-items" style="background-color: white; font-size:30px;">
+
+            </ol>
+        </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
